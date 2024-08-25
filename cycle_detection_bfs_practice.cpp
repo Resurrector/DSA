@@ -24,9 +24,9 @@ bool detect(int src, int vis[], vector<int> adj[]){
     return false;
 }
 
-bool isCycle(int V, vector<int> adj[]){
-    int vis[V]={0};
-    for(int i=0;i<V;i++){
+bool isCycle(int E, vector<int> adj[]){
+    int vis[E]={0};
+    for(int i=0;i<E;i++){
         if(!vis[i]){
             if(detect(i,vis,adj)==true) return true;
         }
